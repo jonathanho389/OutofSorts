@@ -9,6 +9,7 @@ public class sortTester{
     for(int i = 0;i < 5;i++){
       pain4[i] = rng.nextInt() % 1000;
     }
+    int[] pain5 = {5,4,3,2,1};
     Sorts.bubbleSort(pain);
     Sorts.bubbleSort(pain2);
     Sorts.bubbleSort(pain3);
@@ -18,5 +19,8 @@ public class sortTester{
     System.out.println(Arrays.toString(pain4));
     Sorts.bubbleSort(pain4);
     System.out.println(Arrays.toString(pain4));
+
+    System.out.println(Sorts.selectionSort(pain5));
+    System.out.println(Arrays.toString(pain5));
   }
 }
