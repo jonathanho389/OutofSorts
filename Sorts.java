@@ -12,7 +12,7 @@ public class Sorts{
     }
   }
 
-  public static int selectionSort(int[] data){
+  public static void selectionSort(int[] data){
     int min = data[0];
     int starting = 0;
     int temp = 0;
@@ -32,8 +32,10 @@ public class Sorts{
       temp = data[starting];
       data[starting] = min;
       data[index] = temp;
-      starting++;
     }
-    return min;
+  }
+
+  public static void insertionSort(int[] data){
+    
   }
 }
